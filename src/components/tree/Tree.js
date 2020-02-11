@@ -113,11 +113,14 @@ export default class VirtualizedTree extends React.PureComponent {
               <div
                 key={index}
                 className={classNames('ParentNode-Line', showLine && 'Show' )}
-                style={{ height: treeNodeHeight }}>
-                <i className="Gutter" style={{
-                  top: treeNodeHeight,
-                  height: (treeNodeHeight - 24) / 2,
-                }}></i>
+                style={{ height: treeNodeHeight }}
+              >
+                {showLine &&
+                  <i className="Gutter" style={{
+                    top: treeNodeHeight,
+                    height: (treeNodeHeight - 24) / 2,
+                  }}></i>
+                }
               </div>
             )
           })}

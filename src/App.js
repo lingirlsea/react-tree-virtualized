@@ -12,7 +12,7 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-      defaultCheckedKeys: [4],
+      defaultCheckedKeys: [3],
       defaultExpandedKeys: [0, 1, 2],
       treeData: treeData,
     }

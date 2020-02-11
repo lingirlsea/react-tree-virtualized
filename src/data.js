@@ -1,12 +1,12 @@
 
 let guid = 10000
-let treeData = Array(4).fill({})
+let treeData = [{}, {}, {}, {}]
 
 treeData.forEach(data => {
   data.id = guid++
   data.children = []
 
-  for(var i = 0; i < 10000; i++) {
+  for(var i = 0; i < 10; i++) {
     data.children.push({
       id: guid++,
       title: data.title + '-' + i
