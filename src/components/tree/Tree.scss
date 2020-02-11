@@ -1,0 +1,57 @@
+//
+.Tree-Virtualized {
+  .TreeNode {
+    display: flex;
+    align-items: center;
+
+    .ParentNode-Line {
+      position: relative;
+      width: 14px;
+      margin-left: 6px;
+      
+      &.Show {
+        border-left: 1px solid #d9d9d9;
+      }
+
+      .Gutter {
+        position: absolute;
+        left: -1px;
+        width: 1px;
+        background-color: #d9d9d9;
+      }
+    }
+
+    .TreeNode-Icon-Wrapper {
+      position: relative;
+    }
+
+    .LeafNode-Line {
+      position: absolute;
+      top: 22px;
+      left: 6px;
+      width: 1px;
+      background-color: #d9d9d9;
+    }
+
+    .Checkbox {
+      margin-left: 8px;
+    }
+
+    .Text {
+      padding: 0 5px;
+      margin-left: 5px;
+      border-radius: 3px;
+      transition: background-color .3s;
+
+      &:hover {
+        background-color: #e6f7ff;
+        transition: background-color .3s;
+        cursor: pointer;
+      }
+
+      &.Selected {
+        background-color: #bae7ff;
+      }
+    }
+  }
+}
